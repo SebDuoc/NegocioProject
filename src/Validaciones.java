@@ -22,7 +22,21 @@ public class Validaciones {
         return false;
     }
 
-    public boolean validarTelefono(int telefono) {
-        String fono = "" + telefono;
+     public boolean validarTelefono (int telefono)
+    {
+        if (telefono > 9999999 && telefono <= 99999999)
+        {
+            return true;
+        }
+        return false;
+    }
+    
+    public boolean validarCorreo (String correo)
+    {
+        if (correo.length() >= 6)
+        {
+            return true;
+        }
+        return false;
     }
 }
